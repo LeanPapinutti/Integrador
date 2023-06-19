@@ -4,23 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/styles.css">
-    <title>Border 3D</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Border 3D XYZ</title>
 </head>
 <body>
     <header class="header">
      <img src="./assets/Border 3D.png" alt="Logo">
      <nav class="navbar">
         <label for="toggle-menu"><i class="fa-solid fa-bars" style="color: #000000;"></i></label>
-        <input type="checkbox"  id="toggle-menu">
-
+        <input type="checkbox"  id="toggle-menu"> 
         <ul class="navbar-list">
-            <li><a href="#" class="navbar-link">INICIO</a></li>
-            <li><a href="#" class="navbar-link">PRODUCTOS</a></li>
-            <li><a href="#" class="navbar-link">CONTACTO</a></li>
-        </ul>
+            <li><a href="#INICIO" class="navbar-link">INICIO</a></li>
+            <li><a href="#PRODUCTOS" class="navbar-link">PRODUCTOS</a></li>
+            <li><a href="#CONTACTO" class="navbar-link">CONTACTO</a></li>
+            <li><a href="#QUIENES SOMOS" class="navbar-link">QUIENES SOMOS</a></li>
+            <li><a href="login.html" class="navbar-login">Inicar Sesion</a></li>
+        </ul> 
      </nav>
-    </header>  
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <h1>Una nueva generación mas potente</h1>
+                <h2>¡Ahora sí, imprimir en 3D se volvió más fácil que nunca!</h2>
+                <p>Hellbot Magna 2 es una impresora 3D que está pensada para facilitarte el trabajo, podrás operarla mediante su pantalla táctil a color de 3.5 pulgadas o remotamente vía WiFi desde tu computadora.
+                Su doble extrusor 2 en 1 con cambio en frío permite utilizar variedad de materiales y colores que permitirán optimizar tu impresión logrando resultados increíbles.</p>
+                <div class="boton">
+                    <a href="#">¡Conoce Más!</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <img src="/assets/Index/Hero.png" alt="magna2">
+            </div>
+        </section>
+        <section id="descripcion">
+            <p>Border 3D es una empresa argentina, con alcance global, de tecnología 3D que se destaca por el desarrollo, producción y comercialización de impresoras 3D de tecnología FDM y DLP, filamento 3D y resinas líquidas para tecnología DLP. Contamos con un equipo de Tecnicos y Diseñadores Industriales con la capacidad de abordar las problematicas del momento e innovar.</p>
+        </section>
+
+        <section id="info">
+            <h2>Servicio</h2>
+            <div class="info-card-container">
+                <div class="info-card">
+                    <i class="fa-light fa-display" style="color: #8c7851;"></i>
+                    <h2>Software</h2>
+                    <p>Utilizá el que más se adapte a tus necesidades</p>
+                    </div>
+            </div>        
+        </section>
+    </main>  
 </body>
 </html>
