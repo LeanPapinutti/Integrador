@@ -2,7 +2,7 @@
 
 :root{
     --fondo: #f9f4ef;
-    --boton: #8c7851;
+    --boton: #8c7952;
     --texto-de-boton: #fffffe;
     --letra: #020826;
     --letra-2: #e4b65a;
@@ -18,6 +18,8 @@ body {
     font-family: "Roboto";
 }
 
+/* NAVBAR */
+
 .header {
     height: 90px;
     display: flex;
@@ -31,8 +33,8 @@ body {
 }
 
 .header img {
-    width: 65px;
-    height: 90px;
+    width: 100px;
+    height: 80px;
 }
 
 .navbar ul {
@@ -67,7 +69,6 @@ body {
   padding: 10px 10px;
 }
 
-
 /*responsive de menu hamburguesa*/
 
 /*PHONE*/
@@ -92,4 +93,221 @@ body {
     #toggle-menu:checked ~ .navbar-list {
         display: flex;
     }
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+ 
+
+#hero {
+    margin-top: 105px;
+    padding: 70px 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 40px;
+    height: 700px;
+}
+
+.hero-info h1 {
+    color: var(--letra);
+    font-family: "Roboto";
+    font-size: 65px;
+    font-weight: 500;
+}
+
+.hero-info h2 {
+    color: var(--boton);
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.hero-info p {
+    color: var(--letra);
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.hero-info a {
+    text-decoration: none;
+    color: var(--texto-de-boton);
+    background-color: var(--boton);
+    width: 150px;
+    padding: 10px 4px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.boton {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.hero-card {
+    width: 900px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#descripcion {
+    font-family: "Roboto";
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: var(--letra);
+    display: flex;
+    width: 95%;
+    height: 200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo);
+    text-align: center;
+    border-radius: 15px;
+    padding: 0px 50px;
+    box-shadow: 0 8px 24px rgb(0, 0, 0, 0.2);
+}
+
+/* Servicio */
+
+#info {
+    padding: 90px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.info-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info-card {
+    width: 300px;
+    height: 200px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #f0d3ae, #bea152);
+    border-radius: 15px;
+    gap: 20px;
+}
+
+
+/* PRODUCTOS */
+
+#productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    gap: 70px;
+    margin-top: 150px;
+}
+
+.nu-productos {
+    color: var(--letra);
+    font-size: 80px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.contenedor-prod {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-direction: row;
+}
+
+.info-productos {
+    background-color: var(--fondo);
+    border-radius: 10px;
+}
+
+.info-productos h3 {
+    color: var(--boton);
+}
+
+.titulo-item span {
+    color: var(--letra);
+}
+
+.cont-comprar {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--boton);
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 2px solid var(--letra);
+}
+
+
+/* FOOTER */
+
+footer {
+    color: var(--letra);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+footer a,
+footer p {
+    color: var(--letra);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+
+/* WHATSAPP CONTACTO */
+
+.whatsapp {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
 }
