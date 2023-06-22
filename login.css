@@ -102,3 +102,21 @@ p{
     font-size: 20px;
     color: var(--letra-2);
 }
+
+/* TABLET referencia: iPad Air */
+
+@media(max-width: 820px) {
+    body{
+    background-image: url(assets/Login/background.png);
+    background-size: 220% 135%;
+}
+}
+
+/* PHONE referencia: Samsung Galaxy A51/71 */
+
+@media(max-width: 412px){
+    body{
+        background-image: url(assets/Login/background.png);
+        background-size: 225% 115%;
+    }
+}
